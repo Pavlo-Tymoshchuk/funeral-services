@@ -1,0 +1,228 @@
+/* Price block */
+
+@media screen and (min-width: 1209px) {
+    .price-block__item {
+        &:hover {
+            background-color: #F8F8F8;
+        }
+    }
+    
+    .price-block__tabs__item {
+        &:hover {
+            color: #AD957C;
+        }
+    }
+}
+
+.price-block {
+    margin-bottom: 150px;
+}
+
+.price-block__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+    .price-block__tabs__item {
+        &:first-child {
+            margin-right: 30px;
+            
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.price-block__tabs__item {
+    font-family: "Cochin",serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: color .4s;
+    
+    &.active {
+        color: #AD957C;
+    }
+    
+    &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        left: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #AD957C;
+    }
+}
+
+.price-block__list {
+    display: flex;
+}
+
+.price-block__slider {
+    position: relative;
+}
+
+.price-block__list--slider {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    transition: opacity .4s;
+    z-index: 0;
+    
+    &.show {
+        z-index: 1;
+        
+        .price-block__item--slider {
+            opacity: 1;
+            
+            &:nth-child(1) {
+                transform: translateY(0px);
+            }
+            
+            &:nth-child(2) {
+                transform: translateY(0px);
+            }
+            
+            &:nth-child(3) {
+                transform: translateY(0px);
+            }
+            
+            &:nth-child(4) {
+                transform: translateY(0px);
+            }
+            
+            &:nth-child(5) {
+                transform: translateY(0px);
+            }
+        }
+    }
+}
+
+.price-block__item {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+    border-right: none;
+    transition: background-color .4s;
+    
+    &:last-child {
+        border-right: 1px solid #E0E0E0;
+    }
+    
+    .main-button {
+        margin-top: auto;
+    }
+}
+
+.price-block__item--slider {
+    opacity: 0;
+    
+    &:nth-child(1) {
+        transform: translateY(100px);
+        transition: opacity .6s 0s, transform .6s 0s;
+    }
+    
+    &:nth-child(2) {
+        transform: translateY(100px);
+        transition: opacity .6s .2s, transform .6s .2s;
+    }
+    
+    &:nth-child(3) {
+        transform: translateY(100px);
+        transition: opacity .6s .4s, transform .6s .4s;
+    }
+    
+    &:nth-child(4) {
+        transform: translateY(100px);
+        transition: opacity .6s .6s, transform .6s .6s;
+    }
+    
+    &:nth-child(5) {
+        transform: translateY(100px);
+        transition: opacity .6s .8s, transform .6s .8s;
+    }
+}
+
+.price-block__item__name {
+    font-family: "Cochin", serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #7A1B2E;
+    margin-bottom: 15px;
+}
+
+.price-block__item__price {
+    font-family: "Cochin", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    
+    span {
+        padding-left: 10px;
+    }
+}
+
+.price-block__item__installment {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #828282;
+    margin-bottom: 5px;
+}
+
+.price-block__item__installment-price {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+}
+
+.price-block__sub-list {
+    text-align: left;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 120%;
+    color: #4F4F4F;
+}
+
+.price-block__sub-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 5px;
+        width: 6px;
+        height: 6px;
+        background-color: #AD957C;
+    }
+}
+
+
+/* //Price block */

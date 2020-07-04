@@ -1,0 +1,870 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+ul[class] {
+  list-style: none;
+}
+ol[class] {
+  list-style: none;
+}
+ul:not([class]),
+ol:not([class]) {
+  padding-left: 17px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: top;
+}
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+textarea {
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+input {
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+html {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+html.overflow {
+  height: auto;
+  position: relative;
+  overflow: hidden !important;
+  margin-right: 17px;
+}
+body {
+  overflow: hidden;
+  min-width: 320px;
+  font-family: "Basis Grotesque Pro";
+  font-weight: 400;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1C1C1C;
+  background-color: #ffffff;
+}
+main {
+  position: relative;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0px 55px;
+  margin: 0px auto;
+}
+.main-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 190px;
+  width: 100%;
+  height: 53px;
+  background-color: #AD957C;
+}
+.main-button--header {
+  font-size: 10px;
+  max-width: 142px;
+  height: 40px;
+  background-color: #561623;
+}
+.general-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.general-header__icon {
+  display: block;
+  width: 37px;
+  height: 31px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+.main-caption-l {
+  font-family: "Cochin";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1C1C1C;
+}
+.general-more {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 0px 0px 8px 8px;
+  border-bottom: 1px solid #AD957C;
+  position: relative;
+  z-index: 1;
+}
+.general-more::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 12px;
+  height: 15px;
+  background-color: #E0E0E0;
+  z-index: -1;
+}
+.general-more--dark {
+  color: #FFFFFF;
+}
+.general-more--dark::before {
+  background-color: #561623;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-email:before {
+  content: "\e902";
+}
+.icon-phone:before {
+  content: "\e903";
+}
+.icon-place:before {
+  content: "\e904";
+}
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(../fonts/BasisGrotesquePro-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(../fonts/BasisGrotesquePro-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(../fonts/BasisGrotesquePro-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cochin";
+  src: url(../fonts/Cochin-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@media screen and (min-width: 1209px) {
+  /* Header hover */
+  .header__contact-link:hover {
+    color: #ffffff;
+  }
+}
+/* Header */
+.header__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 30px;
+  background-color: #39060A;
+}
+.header__contact-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.header__contact-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  margin-right: 30px;
+  color: #BDBDBD;
+}
+.header__contact-item:last-child {
+  margin-right: 0px;
+}
+.header__contact-item .icon-phone {
+  font-size: 15px;
+  margin-right: 12px;
+}
+.header__contact-item .icon-place {
+  font-size: 16px;
+  margin-right: 14px;
+}
+.header__contact-item .icon-email {
+  font-size: 13px;
+  margin-right: 12px;
+}
+.header__contact-link {
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.header__main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #7A1B2E;
+  height: 65px;
+}
+.header__main__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 100px;
+  height: 41px;
+}
+.header__nav {
+  margin-left: 40px;
+}
+.header__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header__item {
+  margin-right: 30px;
+}
+.header__item:last-child {
+  margin-right: 0px;
+}
+/* Main-banner */
+.main-banner {
+  margin-bottom: 40px;
+}
+.main-banner__list {
+  width: 100%;
+  height: 426px;
+  position: relative;
+}
+.main-banner__item {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  z-index: 0;
+}
+.main-banner__item.show {
+  z-index: 1;
+}
+.main-banner__item.show .main-banner__item__img {
+  opacity: 1;
+}
+.main-banner__item.show .main-banner__item__wrapper .main-button {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+.main-banner__item.show .main-banner__item__caption {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+.main-banner__item.show .main-banner__item__sub {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+.main-banner__item__img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+.main-banner__item__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  padding-left: 155px;
+}
+.main-banner__item__wrapper .main-button {
+  -webkit-transform: translateX(-100px);
+  transform: translateX(-100px);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.4s 0.4s;
+  transition: opacity 0.4s 0.4s, -webkit-transform 0.4s 0.4s;
+  transition: opacity 0.4s 0.4s, transform 0.4s 0.4s;
+  transition: opacity 0.4s 0.4s, transform 0.4s 0.4s, -webkit-transform 0.4s 0.4s;
+}
+.main-banner__item__caption {
+  font-family: "Cochin", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  max-width: 500px;
+  -webkit-transform: translateX(-100px);
+  transform: translateX(-100px);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+  transition: opacity 0.4s, -webkit-transform 0.4s;
+  transition: opacity 0.4s, transform 0.4s;
+  transition: opacity 0.4s, transform 0.4s, -webkit-transform 0.4s;
+}
+.main-banner__item__sub {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  -webkit-transform: translateX(-100px);
+  transform: translateX(-100px);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.4s 0.2s;
+  transition: opacity 0.4s 0.2s, -webkit-transform 0.4s 0.2s;
+  transition: opacity 0.4s 0.2s, transform 0.4s 0.2s;
+  transition: opacity 0.4s 0.2s, transform 0.4s 0.2s, -webkit-transform 0.4s 0.2s;
+}
+.main-banner__nav-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: -81px;
+  position: relative;
+  z-index: 2;
+}
+.main-banner__nav-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  color: #ffffff;
+}
+.main-banner__nav-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 15px;
+  border-left: 1px solid #ffffff;
+  padding-right: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  min-width: 200px;
+}
+.main-banner__nav-button:last-child {
+  padding-right: 0px;
+}
+.main-banner__nav__number {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+/* /Main-banner */
+/* Our services */
+.our-services {
+  margin-bottom: 150px;
+}
+.our-services__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -50px;
+}
+.our-services__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: calc(25% - 30px);
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+.our-services__item .general-more {
+  margin-top: auto;
+}
+.our-services__item__img {
+  height: 120px;
+  margin-bottom: 13px;
+}
+.our-services__item__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.our-services__item__caption {
+  font-family: "Cochin", serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.our-services__item__text {
+  font-size: 14px;
+  line-height: 150%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 42px;
+  margin-bottom: 14px;
+}
+/* //Our services */
+/* Price block */
+@media screen and (min-width: 1209px) {
+  .price-block__item:hover {
+    background-color: #F8F8F8;
+  }
+  .price-block__tabs__item:hover {
+    color: #AD957C;
+  }
+}
+.price-block {
+  margin-bottom: 150px;
+}
+.price-block__tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.price-block__tabs .price-block__tabs__item:first-child {
+  margin-right: 30px;
+}
+.price-block__tabs .price-block__tabs__item:first-child::before {
+  display: none;
+}
+.price-block__tabs__item {
+  font-family: "Cochin", serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.price-block__tabs__item.active {
+  color: #AD957C;
+}
+.price-block__tabs__item::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #AD957C;
+}
+.price-block__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.price-block__slider {
+  position: relative;
+}
+.price-block__list--slider {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  z-index: 0;
+}
+.price-block__list--slider.show {
+  z-index: 1;
+}
+.price-block__list--slider.show .price-block__item--slider {
+  opacity: 1;
+}
+.price-block__list--slider.show .price-block__item--slider:nth-child(1) {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.price-block__list--slider.show .price-block__item--slider:nth-child(2) {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.price-block__list--slider.show .price-block__item--slider:nth-child(3) {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.price-block__list--slider.show .price-block__item--slider:nth-child(4) {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.price-block__list--slider.show .price-block__item--slider:nth-child(5) {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.price-block__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #E0E0E0;
+  border-right: none;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.price-block__item:last-child {
+  border-right: 1px solid #E0E0E0;
+}
+.price-block__item .main-button {
+  margin-top: auto;
+}
+.price-block__item--slider {
+  opacity: 0;
+}
+.price-block__item--slider:nth-child(1) {
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: opacity 0.6s 0s, -webkit-transform 0.6s 0s;
+  transition: opacity 0.6s 0s, -webkit-transform 0.6s 0s;
+  transition: opacity 0.6s 0s, transform 0.6s 0s;
+  transition: opacity 0.6s 0s, transform 0.6s 0s, -webkit-transform 0.6s 0s;
+}
+.price-block__item--slider:nth-child(2) {
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: opacity 0.6s 0.2s, -webkit-transform 0.6s 0.2s;
+  transition: opacity 0.6s 0.2s, -webkit-transform 0.6s 0.2s;
+  transition: opacity 0.6s 0.2s, transform 0.6s 0.2s;
+  transition: opacity 0.6s 0.2s, transform 0.6s 0.2s, -webkit-transform 0.6s 0.2s;
+}
+.price-block__item--slider:nth-child(3) {
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: opacity 0.6s 0.4s, -webkit-transform 0.6s 0.4s;
+  transition: opacity 0.6s 0.4s, -webkit-transform 0.6s 0.4s;
+  transition: opacity 0.6s 0.4s, transform 0.6s 0.4s;
+  transition: opacity 0.6s 0.4s, transform 0.6s 0.4s, -webkit-transform 0.6s 0.4s;
+}
+.price-block__item--slider:nth-child(4) {
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: opacity 0.6s 0.6s, -webkit-transform 0.6s 0.6s;
+  transition: opacity 0.6s 0.6s, -webkit-transform 0.6s 0.6s;
+  transition: opacity 0.6s 0.6s, transform 0.6s 0.6s;
+  transition: opacity 0.6s 0.6s, transform 0.6s 0.6s, -webkit-transform 0.6s 0.6s;
+}
+.price-block__item--slider:nth-child(5) {
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: opacity 0.6s 0.8s, -webkit-transform 0.6s 0.8s;
+  transition: opacity 0.6s 0.8s, -webkit-transform 0.6s 0.8s;
+  transition: opacity 0.6s 0.8s, transform 0.6s 0.8s;
+  transition: opacity 0.6s 0.8s, transform 0.6s 0.8s, -webkit-transform 0.6s 0.8s;
+}
+.price-block__item__name {
+  font-family: "Cochin", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #7A1B2E;
+  margin-bottom: 15px;
+}
+.price-block__item__price {
+  font-family: "Cochin", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.price-block__item__price span {
+  padding-left: 10px;
+}
+.price-block__item__installment {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #828282;
+  margin-bottom: 5px;
+}
+.price-block__item__installment-price {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4F4F4F;
+}
+.price-block__sub-list {
+  text-align: left;
+  margin: 20px 0px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 120%;
+  color: #4F4F4F;
+}
+.price-block__sub-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.price-block__sub-item:last-child {
+  margin-bottom: 0px;
+}
+.price-block__sub-item::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: #AD957C;
+}
+/* //Price block */
+/* About us */
+.about-us {
+  margin-bottom: 150px;
+}
+.about-us__container {
+  background-color: #7A1B2E;
+  color: #FFFFFF;
+  padding: 30px 30px 30px 50px;
+}
+.about-us__container .main-caption-l {
+  color: #FFFFFF;
+}
+.about-us__wrapper-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-us__img {
+  width: 500px;
+  height: 288px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 50px;
+  margin-bottom: -50px;
+}
+.about-us__info {
+  font-size: 16px;
+  line-height: 150%;
+}
+.about-us__info p {
+  margin-bottom: 20px;
+}
+.about-us__info p:last-child {
+  margin-bottom: 0px;
+}
+.about-us__info .general-more {
+  margin-top: 25px;
+}
+.about-us__info__caption {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+/* About us */

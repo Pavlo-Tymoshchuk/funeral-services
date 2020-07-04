@@ -1,0 +1,194 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+ol[class] {
+    list-style: none;
+}
+
+ul:not([class]), ol:not([class]) {
+    padding-left: 17px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+
+a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+textarea {
+    font: inherit;
+    color: inherit;
+    outline: none;
+}
+
+input {
+    font: inherit;
+    color: inherit;
+    outline: none;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    text-transform: inherit;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+}
+
+html {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+html.overflow {
+    height: auto;
+    position: relative;
+    overflow: hidden !important;
+    margin-right: 17px;
+}
+
+body {
+    overflow: hidden;
+    min-width: 320px;
+    font-family: "Basis Grotesque Pro";
+    font-weight: 400;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #1C1C1C;
+    background-color: #ffffff;
+}
+
+main {
+    position: relative;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0px 55px;
+    margin: 0px auto;
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 190px;
+    width: 100%;
+    height: 53px;
+    background-color: #AD957C;
+}
+
+.main-button--header {
+    font-size: 10px;
+    max-width: 142px;
+    height: 40px;
+    background-color: #561623;
+}
+
+.general-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.general-header__icon {
+    display: block;
+    width: 37px;
+    height: 31px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+
+.main-caption-l {
+    font-family: "Cochin";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1C1C1C;
+}
+
+.general-more {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 0px 0px 8px 8px;
+    border-bottom: 1px solid #AD957C;
+    position: relative;
+    z-index: 1;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 12px;
+        height: 15px;
+        background-color: #E0E0E0;
+        z-index: -1;
+    }
+}
+
+.general-more--dark {
+    color: #FFFFFF;
+    
+    &::before {
+        background-color: #561623;
+    }
+}
