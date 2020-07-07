@@ -1,0 +1,135 @@
+/* Footer */
+@media screen and (min-width: 1209px) {
+    .footer__link {
+        &:hover {
+            color: #CDB092;
+        }
+    }
+    
+    .footer-policy-link {
+        &:hover {
+            color: #1C1C1C;
+        }
+    }
+}
+
+.footer {
+    padding: 40px 0px 20px;
+    border-top: 1px solid #E0E0E0;
+    margin-top: auto;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.footer__item {
+    margin-right: 30px;
+    
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.footer__link {
+    transition: color .4s;
+}
+
+.call-back__info-list--footer {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    
+    .call-back__info-item {
+        margin-right: 32px;
+        margin-bottom: 0px;
+        
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.footer__down {
+    position: relative;
+    margin-top: 40px;
+    font-size: 11px;
+    line-height: 14px;
+    color: #828282;
+    text-transform: uppercase;
+}
+
+.footer-policy-link {
+    letter-spacing: 0.05em;
+    transition: color .4s;
+}
+
+.footer-copyright {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1210px) {
+    .footer {
+        padding: 20px 0px;
+    }
+    
+    .footer__top {
+        flex-direction: column;
+    }
+    
+    .footer__list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+    
+    .footer__item {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    
+    .call-back__info-list--footer {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        .call-back__info-item {
+            margin-right: 0px;
+            margin-bottom: 20px;
+            
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    
+    .footer__down {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .footer-copyright {
+        position: static;
+        margin-top: 20px;
+        transform: none;
+    }
+}
+
+/* Footer */

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЦРУ</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <ul class="header__contact-list">
+                    <li class="header__contact-item">
+                        <span class="icon-phone"></span>
+                        <a href="tel: 8-800-500-50-99" class="header__contact-link">8-800-500-50-99</a>
+                    </li>
+                    <li class="header__contact-item">
+                        <span class="icon-place"></span>
+                        <span>Москва, Ореховый бульвар, 47</span>
+                    </li>
+                    <li class="header__contact-item">
+                        <span class="icon-email"></span>
+                        <a href="mailto: ritual365@ya.ru" class="header__contact-link">ritual365@ya.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="header__main__wrapper container">
+                <div class="header__logo">
+                    <img src="./img/logo.png" alt="ЦРУ">
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">главная</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">наши услуги</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">цены</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">о компаниии</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="main-button main-button--header">оформить заказ</a>
+                <button class="js-button header__burger-button" data-target="burger-menu"></button>
+            </div>
+        </div>
+        <div class="header-burger-menu js-popup" data-target="burger-menu">
+            <button class="close__popup js-close close__popup--burger"></button>
+            <ul class="header__list header__list--burger">
+                <li class="header__item">
+                    <a href="#" class="header__link">главная</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">наши услуги</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">цены</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">о компаниии</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">контакты</a>
+                </li>
+            </ul>
+            <ul class="header__contact-list header__contact-list--burger">
+                <li class="header__contact-item">
+                    <span class="icon-place"></span>
+                    <span>Москва, Ореховый бульвар, 47</span>
+                </li>
+                <li class="header__contact-item">
+                    <span class="icon-email"></span>
+                    <a href="mailto: ritual365@ya.ru" class="header__contact-link">ritual365@ya.ru</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="breadcrumbs">
+            <div class="breadcrumbs__wrapper container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Наши услуги</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="our-services">
+            <div class="our-services__wrapper container">
+                <div class="general-header">
+                    <span class="general-header__icon" style="background-image: url(./img/general-decor-caption.png)"></span>
+                    <p class="main-caption-l">Наши услуги</p>
+                </div>
+                <ul class="our-services__list">
+                    <li class="our-services__item">
+                        <div class="our-services__item__img">
+                            <img src="./img/our-services-img-1.png" alt="Фото">
+                        </div>
+                        <p class="our-services__item__caption">организация похорон</p>
+                        <p class="our-services__item__text">Полная организация похоронного мероприятия</p>
+                        <a href="#" class="general-more">
+                            <span class="text">подробнее</span>
+                            <span class="icon-arrow-right"></span>
+                        </a>
+                    </li>
+                    <li class="our-services__item">
+                        <div class="our-services__item__img">
+                            <img src="./img/our-services-img-2.png" alt="Фото">
+                        </div>
+                        <p class="our-services__item__caption">кремация</p>
+                        <p class="our-services__item__text">Самый современный и экологически чистый вид погребения</p>
+                        <a href="#" class="general-more">
+                            <span class="text">подробнее</span>
+                            <span class="icon-arrow-right"></span>
+                        </a>
+                    </li>
+                    <li class="our-services__item">
+                        <div class="our-services__item__img">
+                            <img src="./img/our-services-img-3.png" alt="Фото">
+                        </div>
+                        <p class="our-services__item__caption">отпевание</p>
+                        <p class="our-services__item__text">Один из важнейших ритуалов, который проводится в храме, в ритуальных залах</p>
+                        <a href="#" class="general-more">
+                            <span class="text">подробнее</span>
+                            <span class="icon-arrow-right"></span>
+                        </a>
+                    </li>
+                    <li class="our-services__item">
+                        <div class="our-services__item__img">
+                            <img src="./img/our-services-img-4.png" alt="Фото">
+                        </div>
+                        <p class="our-services__item__caption">Эксгумация</p>
+                        <p class="our-services__item__text">Полная организация похоронного мероприятия</p>
+                        <a href="#" class="general-more">
+                            <span class="text">подробнее</span>
+                            <span class="icon-arrow-right"></span>
+                        </a>
+                    </li>
+                    <li class="our-services__item">
+                        <div class="our-services__item__img">
+                            <img src="./img/our-services-img-5.png" alt="Фото">
+                        </div>
+                        <p class="our-services__item__caption">омовение</p>
+                        <p class="our-services__item__text">Полная организация похоронного мероприятия</p>
+                        <a href="#" class="general-more">
+                            <span class="text">подробнее</span>
+                            <span class="icon-arrow-right"></span>
+                        </a>
+                    </li>
+                    <li class="our-services__item">
+                        <div class="our-services__item__img">
+                            <img src="./img/our-services-img-6.png" alt="Фото">
+                        </div>
+                        <p class="our-services__item__caption">похоронный оркестр</p>
+                        <p class="our-services__item__text">Полная организация похоронного мероприятия</p>
+                        <a href="#" class="general-more">
+                            <span class="text">подробнее</span>
+                            <span class="icon-arrow-right"></span>
+                        </a>
+                    </li>
+                    <li class="our-services__item">
+                        <div class="our-services__item__img">
+                            <img src="./img/our-services-img-7.png" alt="Фото">
+                        </div>
+                        <p class="our-services__item__caption">транспорт</p>
+                        <p class="our-services__item__text">Полная организация похоронного мероприятия</p>
+                        <a href="#" class="general-more">
+                            <span class="text">подробнее</span>
+                            <span class="icon-arrow-right"></span>
+                        </a>
+                    </li>
+                    <li class="our-services__item">
+                        <div class="our-services__item__img">
+                            <img src="./img/our-services-img-8.png" alt="Фото">
+                        </div>
+                        <p class="our-services__item__caption">место на кладбище</p>
+                        <p class="our-services__item__text">Полная организация похоронного мероприятия</p>
+                        <a href="#" class="general-more">
+                            <span class="text">подробнее</span>
+                            <span class="icon-arrow-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="our-services-price-block" style="background-image: url(./img/our-services-price-block-img.png)">
+            <div class="our-services-price-block__wrapper container">
+                <div class="our-services-price-block__container">
+                    <div class="general-header">
+                        <span class="general-header__icon" style="background-image: url(./img/general-decor-caption.png)"></span>
+                        <p class="main-caption-m">цены на ритуальные услуги</p>
+                    </div>
+                    <p class="our-services-price-block__text">Наша компания предоставляет 5 видов комплексов разной стоимости </p>
+                    <a href="#" class="main-button main-button--white">узнать цены</a>
+                </div>
+            </div>
+        </section>
+        <section class="call-back">
+            <div class="call-back__wrapper container">
+                <div class="call-back__form js-call-back-form">
+                    <p class="main-caption-s">свяжитесь с нами</p>
+                    <label class="main-input__wrapper">
+                        <input type="text" class="main-input" placeholder="Ваше имя">
+                    </label>
+                    <label class="main-input__wrapper">
+                        <input type="text" class="main-input js-call-back-email" placeholder="Ваш email" required>
+                        <span class="error-text">Пожалуйста, введите ваш e-mail в формате: email@email</span>
+                    </label>
+                    <label class="main-input__wrapper">
+                        <input type="text" class="main-input" placeholder="Ваше сообщение">
+                    </label>
+                    <button class="main-button main-button--white js-button-call-back">отправить</button>
+                </div>
+                <div class="call-back__info" style="background-image:url(./img/contact-img.png)">
+                    <p class="main-caption-s">контакты</p>
+                    <ul class="call-back__info-list">
+                        <li class="call-back__info-item">
+                            <span class="icon-place"></span>
+                            <span>Москва, Ореховый бульвар, 47</span>
+                        </li>
+                        <li class="call-back__info-item">
+                            <span class="icon-phone"></span>
+                            <a href="tel: 8-800-500-50-99" class="call-back__info-link">8-800-500-50-99</a>
+                        </li>
+                        <li class="call-back__info-item">
+                            <span class="icon-email"></span>
+                            <a href="mailto: ritual365@ya.ru" class="call-back__info-link">ritual365@ya.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="seo-block">
+            <div class="seo-block__wrapper container">
+                <div class="general-header">
+                    <span class="general-header__icon" style="background-image: url(./img/general-decor-caption.png)"></span>
+                    <p class="main-caption-m">сео-текст</p>
+                </div>
+                <div class="seo-block__content">
+                    <h5>Наследовать по завещанию </h5>
+                    <p>Могут как законные наследники (супруг, дети, внуки и внучки, родители, братья и сестры), так и посторонние лица. Надо отметить, что наследование по завещанию будет осуществлено только в том случае, если этот документ был составлен правильно. В частности, подписан лично завещателем и заверен нотариусом. Если содержание или форма завещания противоречит требованиям закона, оно может быть оспорено или признано недействительным.</p>
+                    <h5>Наследовать по завещанию </h5>
+                    <p>Могут как законные наследники (супруг, дети, внуки и внучки, родители, братья и сестры), так и посторонние лица. Надо отметить, что наследование по завещанию будет осуществлено только в том случае, если этот документ был составлен правильно. В частности, подписан лично завещателем и заверен нотариусом. Если содержание или форма завещания противоречит требованиям закона, оно может быть оспорено или признано недействительным.</p>
+                    <p>Могут как законные наследники (супруг, дети, внуки и внучки, родители, братья и сестры), так и посторонние лица. Надо отметить, что наследование по завещанию будет осуществлено только в том случае, если этот документ был составлен правильно. В частности, подписан лично завещателем и заверен нотариусом. Если содержание или форма завещания противоречит требованиям закона, оно может быть оспорено или признано недействительным.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__top">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">главная</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">цены</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">наши услуги</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">о компаниии</a>
+                    </li>
+                </ul>
+                <ul class="call-back__info-list call-back__info-list--footer">
+                    <li class="call-back__info-item">
+                        <span class="icon-phone"></span>
+                        <a href="tel: 8-800-500-50-99" class="call-back__info-link">8-800-500-50-99</a>
+                    </li>
+                    <li class="call-back__info-item">
+                        <span class="icon-place"></span>
+                        <span>Москва, Ореховый бульвар, 47</span>
+                    </li>
+                    <li class="call-back__info-item">
+                        <span class="icon-email"></span>
+                        <a href="mailto: ritual365@ya.ru" class="call-back__info-link">ritual365@ya.ru</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__down">
+                <a href="#" class="footer-policy-link">Политика конфиденциальности</a>
+                <p class="footer-copyright">© ЦРУ  2020</p>
+            </div>
+        </div>
+    </footer>
+    <section class="popup popup-call-back js-call-back-popup js-popup">
+        <button class="close__popup js-close"></button>
+        <p class="popup-caption">Ваше сообщение отправлено нам</p>
+        <p class="popup-text">Мы ответим Вам в ближайшее время</p>
+        <p class="popup-contact-caption">Наши контакты </p>
+        <ul class="call-back__info-list call-back__info-list--popup">
+            <li class="call-back__info-item">
+                <span class="icon-place"></span>
+                <span>Москва, Ореховый бульвар, 47</span>
+            </li>
+            <li class="call-back__info-item">
+                <span class="icon-phone"></span>
+                <a href="tel: 8-800-500-50-99" class="call-back__info-link">8-800-500-50-99</a>
+            </li>
+            <li class="call-back__info-item">
+                <span class="icon-email"></span>
+                <a href="mailto: ritual365@ya.ru" class="call-back__info-link">ritual365@ya.ru</a>
+            </li>
+        </ul>
+    </section>
+    <div class="overlay"></div>
+    <script src="./js/main.js"></script>
+</body>

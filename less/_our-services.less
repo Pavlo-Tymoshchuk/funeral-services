@@ -1,10 +1,4 @@
 /* Our services */
-
-@media screen and (min-width: 1209px) {
-    
-
-}
-
 .our-services {
     margin-bottom: 150px;
 }
@@ -30,6 +24,7 @@
 }
 
 .our-services__item__img {
+    width: 100%;
     height: 120px;
     margin-bottom: 13px;
     
@@ -60,6 +55,33 @@
     text-overflow: ellipsis;
     max-height: 42px;
     margin-bottom: 14px;
+}
+
+@media screen and (max-width: 1210px) {
+    .our-services {
+        margin-bottom: 50px;
+    }
+    
+    .our-services__list--main-page {
+        .our-services__item {
+            display: none;
+            
+            &:first-child {
+                display: flex;
+            }
+        }
+    }
+    
+    .our-services__list {
+        margin-right: 0px;
+        margin-bottom: -20px;
+    }
+    
+    .our-services__item {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
 }
 
 /* //Our services */
